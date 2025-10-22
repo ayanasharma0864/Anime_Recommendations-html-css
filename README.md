@@ -2,7 +2,7 @@
 A beautifully designed and interactive platform built using HTML and CSS for SnW individual project.
 
 # Overview 🌸
-helps users explore and discover new anime across different genres — from action and fantasy to romance and slice of life. The site showcases multiple genres 🎬 , hot picks 🔥 and best recommendations 🌟 , offering a fun and easy way for fans to find their next favorite anime.
+Helps users explore and discover new anime across different genres — from action and fantasy to romance and slice of life. The site showcases multiple genres 🎬 , hot picks 🔥 and best recommendations 🌟 , offering a fun and easy way for fans to find their next favorite anime.
 
 # Features ✨
   ~ 🎬 Genre Collections:
@@ -27,4 +27,4 @@ helps users explore and discover new anime across different genres — from acti
   CSS3 
 
 # Author ✍🏽
-Ayana Sharma
+  Ayana Sharma
