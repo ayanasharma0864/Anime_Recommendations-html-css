@@ -194,7 +194,8 @@ nav a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     padding-bottom: 15px;
-    position: relative;
+    /* position: relative; */
+   
 }
 
 .anime-card:hover {
@@ -205,12 +206,14 @@ nav a:hover {
 
 .card-image {
     height: 180px;
-    background-color: var(--tertiary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ccc;
-    font-size: 0.9rem;
+    width: 200px;
+    
+    /* background-color: var(--tertiary-color); */
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    /* color: #ccc; */
+    /* font-size: 0.9rem; */
     border-bottom: 3px solid var(--primary-color);
 }
 
@@ -226,7 +229,7 @@ nav a:hover {
 }
 
 .badge {
-    position: absolute;
+    /* position: absolute; */
     top: 10px;
     right: 10px;
     padding: 5px 10px;
@@ -292,7 +295,7 @@ nav a:hover {
 }
 
 .genre-content {
-    display: none; 
+    /* display: none;  */
     padding: 20px 0;
     animation: tabFadeIn 0.5s ease-out;
 }
@@ -304,24 +307,47 @@ nav a:hover {
 #action-content.active-default {
     display: block;
 }
+
 #romance-content.active-default {
     display: block;
 }
+
 #comedy-content {
     display: block;
 }
+
 #fantasy-content {
     display: block;
 }
+
 #mystery-content {
     display: block;
 }
+
 #adventure-content {
     display: block;
 }
- 
 
- 
+#drama-content {
+    display: block;
+}
+
+#slice_of_life-content {
+    display: block;
+}
+
+#school-content {
+    display: block;
+}
+
+#psychology-content {
+    display: block;
+}
+
+#horror-content {
+    display: block;
+}
+
 .tab-nav a:active {
     background-color: var(--primary-color);
     color: var(--background-dark);
