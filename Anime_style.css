@@ -110,12 +110,12 @@ nav a:hover {
 .hero {
     height: 60vh;
     background: linear-gradient(rgba(31, 31, 63, 0.8), rgba(31, 31, 63, 0.8)), url('anime-background.jpg') center/cover;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 40px;
-    position: relative;
+    /* position: relative; */
 }
 
 .hero-content {
@@ -188,7 +188,7 @@ nav a:hover {
 .anime-card {
     background-color: var(--card-bg);
     border-radius: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 300px;
     box-shadow: 0 8px 15px var(--shadow-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -203,11 +203,9 @@ nav a:hover {
     box-shadow: 0 15px 30px rgba(255, 105, 180, 0.4);
     cursor: pointer;
 }
-
-.card-image {
-    height: 180px;
+ div.card-image{
+    height: 200px;
     width: 200px;
-    
     /* background-color: var(--tertiary-color); */
     /* display: flex;
     justify-content: center; */
@@ -217,8 +215,25 @@ nav a:hover {
     border-bottom: 3px solid var(--primary-color);
 }
 
-.anime-card h3, .anime-card h4 {
+div.card-image>img {
+    height: 220px;
+    width: 200px;
+    /* background-color: var(--tertiary-color); */
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    /* color: #ccc; */
+    /* font-size: 0.9rem; */
+    border-bottom: 3px solid var(--primary-color);
+}
+.anime-card h3{
     margin-top: 15px;
+    color: var(--hover-color);
+    font-size: 1.3rem;
+}
+
+ .anime-card h4 {
+    margin-top: 28px;
     color: var(--hover-color);
     font-size: 1.3rem;
 }
@@ -297,12 +312,12 @@ nav a:hover {
 .genre-content {
     /* display: none;  */
     padding: 20px 0;
-    animation: tabFadeIn 0.5s ease-out;
+    /* animation: tabFadeIn 0.5s ease-out; */
 }
 
-.genre-content:target {
+/* .genre-content:target {
     display: block;
-}
+} */
 
 #action-content.active-default {
     display: block;
@@ -359,9 +374,9 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.genre-card-container {
+/* .genre-card-container {
     justify-content: start;
-}
+} */
 
 .genre-card {
     width: 200px;
@@ -391,7 +406,7 @@ footer {
         flex-direction: column;
         text-align: center;
         padding-bottom: 10px;
-        position: static; 
+        /* position: static;  */
     }
 
     body {
@@ -419,10 +434,10 @@ footer {
         padding: 40px 5%;
     }
 
-    .anime-card {
+    /* .anime-card {
         width: 100%;
         max-width: 350px;
-    }
+    } */
 
     .recommendation-list ul {
         grid-template-columns: 1fr;
