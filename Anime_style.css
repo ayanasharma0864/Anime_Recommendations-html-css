@@ -22,7 +22,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     scroll-behavior: smooth;
-    padding-top: 80px; 
+    padding-top: 80px;
 }
 
 a {
@@ -108,7 +108,8 @@ nav a:hover {
     height: 600px;
 }
 .hero {
-    height: 60vh;
+    padding-top: 50px;
+    height: 20vh;
     background: linear-gradient(rgba(31, 31, 63, 0.8), rgba(31, 31, 63, 0.8)), url('anime-background.jpg') center/cover;
     /* display: flex; */
     justify-content: center;
@@ -152,7 +153,7 @@ nav a:hover {
 }
 
 .content-section {
-    padding: 60px 5%;
+    padding: 50px 5%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -226,13 +227,18 @@ div.card-image>img {
     /* font-size: 0.9rem; */
     border-bottom: 3px solid var(--primary-color);
 }
+#hotcards img{
+    height: 220px;
+    width: 300px;
+    border-bottom: 3px solid var(--primary-color);
+}
 .anime-card h3{
     margin-top: 15px;
     color: var(--hover-color);
     font-size: 1.3rem;
 }
 
- .anime-card h4 {
+.anime-card h4 {
     margin-top: 28px;
     color: var(--hover-color);
     font-size: 1.3rem;
@@ -319,49 +325,49 @@ div.card-image>img {
     display: block;
 } */
 
-#action-content.active-default {
+/* #action-content{
+    display: block;
+} */
+/* 
+#romance-content{
     display: block;
 }
 
-#romance-content.active-default {
+#comedy-content{
+    display: block;
+} */
+
+/* #fantasy-content{
     display: block;
 }
 
-#comedy-content {
+#mystery-content{
     display: block;
 }
 
-#fantasy-content {
+#adventure-content{
     display: block;
 }
 
-#mystery-content {
+#drama-content{
     display: block;
 }
 
-#adventure-content {
+#slice_of_life-content{
     display: block;
 }
 
-#drama-content {
+#school-content{
     display: block;
 }
 
-#slice_of_life-content {
+#psychology-content{
     display: block;
 }
 
-#school-content {
+#horror-content{
     display: block;
-}
-
-#psychology-content {
-    display: block;
-}
-
-#horror-content {
-    display: block;
-}
+} */
 
 .tab-nav a:active {
     background-color: var(--primary-color);
