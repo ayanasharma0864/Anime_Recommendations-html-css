@@ -18,15 +18,16 @@
             <input type="text" name="query" placeholder="Search Anime...">
             <button type="submit">🔍</button>
         </form> 
-        <div>
         <nav>
             <a href="#hot-picks">🔥 Hot Picks</a>
             <a href="#best-recommendations">🌟 Best Recommendations</a>
             <a href="#genre-collections">🎬 Genres</a>
         </nav>
-        </div>
     </header>
-      <div><img class="banner" src="Animebanner.png"></div>
+
+    <div class="banner-container">
+        <img class="banner" src="Animebanner.png" alt="Anime Banner">
+    </div>
 
     <main>
         <section class="hero">
@@ -42,29 +43,35 @@
             <p class="section-description">Stay up-to-date with the most hyped and popular anime titles of the month.</p>
             <div class="card-container">
                 <div class="anime-card hot-pick-card">
-                    <div class="card-image" id="hotcards">
-                        <img src="images/One Piece.jpg">
+                    <div class="card-image hotcards">
+                        <img src="images/One Piece.jpg" alt="One Piece">
                     </div>
-                    <h3>One Piece</h3>
-                    <p>Action, Adventure ,Fantasy</p>
-                    <span class="badge new">💨 Top Airing!!</span>
+                    <div class="card-content">
+                        <h3>One Piece</h3>
+                        <p>Action, Adventure, Fantasy</p>
+                        <span class="badge new">💨 Top Airing!!</span>
+                    </div>
                 </div>
 
                 <div class="anime-card hot-pick-card">
-                    <div class="card-image" id="hotcards">
-                        <img src="images/Wotakoi- Love is Hard for Otaku.jpg">
+                    <div class="card-image hotcards">
+                        <img src="images/Wotakoi- Love is Hard for Otaku.jpg" alt="Wotakoi">
                     </div>
-                    <h3>Wotakoi: Love is Hard for Otaku</h3>
-                    <p>Romance, Slice of Life</p>
-                    <span class="badge trending">⚡️ Viral Hype!!</span>
+                    <div class="card-content">
+                        <h3>Wotakoi: Love is Hard for Otaku</h3>
+                        <p>Romance, Slice of Life</p>
+                        <span class="badge trending">⚡️ Viral Hype!!</span>
+                    </div>
                 </div>
                 <div class="anime-card hot-pick-card">
-                    <div class="card-image" id="hotcards">
-                        <img src="images/Cowboy Bebop.jpeg"> 
+                    <div class="card-image hotcards">
+                        <img src="images/Cowboy Bebop.jpeg" alt="Cowboy Bebop"> 
                     </div>
-                    <h3>Cowboy Bebop</h3>
-                    <p>Sci-Fi, Action</p>
-                    <span class="badge popular">🏆 Top Rated</span>
+                    <div class="card-content">
+                        <h3>Cowboy Bebop</h3>
+                        <p>Sci-Fi, Action</p>
+                        <span class="badge popular">🏆 Top Rated</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -258,8 +265,41 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 SnW Anime Project | Built with HTML5 & CSS3</p>
+        <div class="footer-content">
+            <p>&copy; 2025 SnW Anime Project | Built with HTML5 & CSS3</p>
+        </div>
     </footer>
 
+    <script>
+        // Tab switching logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.tab-link');
+            const contents = document.querySelectorAll('.genre-content');
+
+            // Hide all contents except first
+            contents.forEach((content, index) => {
+                if (index !== 0) content.style.display = 'none';
+            });
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+
+                    // Hide all contents
+                    contents.forEach(c => c.style.display = 'none');
+
+                    // Show target content
+                    const targetId = tab.getAttribute('href').substring(1);
+                    document.getElementById(targetId).style.display = 'block';
+                });
+            });
+            
+            // Set initial active tab
+            if(tabs.length > 0) tabs[0].classList.add('active');
+        });
+    </script>
 </body>
 </html>
